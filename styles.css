@@ -1,0 +1,135 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+#hero {
+    background: url('messi.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #263f49;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    #hero {
+        background-size: 100% auto;
+
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for mobile phones */
+    #hero {
+        height: 100vh; /* Adjust height for mobile */
+    }
+}
+
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#gallery .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#gallery .gallery-container img {
+    width: 300px;
+    margin: 10px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
